@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title></title>
+</head>
+<body>
+	<h1 id="dato">Bienvenidos a mi Web!!</h1>
+	<h1 class="dato">Bienvenidos a mi Web!!</h1>
+	<h1 id="saludo"></h1>
+	<script>
+	/*
+	for(variable;condicion;ajuste){
+		sentencias...
+	}
+	i = 1;
+	impresora = 1
+	*/
+	/*for (var i = 1 ; i <= 10; i++) {
+		if (i != 5) { 
+		console.log(i); //f12 para ver lo que hice
+		}
+	}*/
+	// tambien puedo hacer eso con FOR
+	// puedo poner un FOR adentro de otro FOR tambien
+	/*for (var i = 1,j = 1 ; i <= 10; i++, j++) {
+		if (i != 5) { 
+		console.log(i + " - " + j); //f12 para ver lo que hice
+		}
+	}*/
+	// asi hago las tablas
+	/*for (var i = 1 ; i <= 10; i++){
+		for (var j = 1 ; j <= 10; j++){
+			console.log(i+" * "+j+" = "+i*j);
+		}
+	}*/
+	//document.getElementById("dato").innerHTML="nuevo";
+	// son distintas maneras de hacer lo mismo
+	//var texto=document.getElementById("dato");
+	// el .innerHTML me ayuda a reconocer el texto que esta adentro del HTML 
+	//alert(texto.innerHTML);
+	// desde JavasCrip estoy editando el contenido de HTML
+	//texto.innerHTML="Esto es un nuevo texto";
+	// para colocar CSS desde JavasCrip tengo que primero envocar el metodo "style" y despues le paso la propiedad del CSS con un punto sin espacios en blanco, sin guion y poner esa segunda propiedad en mayuscula 
+	//texto.style.backgroundColor="red";
+	/*document.getElementByClassName
+	document.getElementByTagName
+	document.querySelector('.clase');
+	document.querySelector('#clase');
+	document.querySelector('etiqueta');*/
+	// nostros podriamos agragar una imagen con .src tambien`o tambien podriamos agregar un valor con .valoue
+	/*var texto2=document.querySelector(".dato");
+	alert(texto2.innerHTML);
+	document.getElementById("saludo").innerHTML="saludo";
+	var texto=document.getElementById("saludo").innerHTML="saludo";
+	// un arreglo es como una variable, porque nos va a permitir guardar mucha informacion dentro de la misma*/
+	// posicion 0,1 y 2
+	// tiene 3 cajas, es un arreglo de tamaño 3
+	// esta es la forma mas utilizada
+	//var nombres=["Daiana "," Giovanny "," Juana"];
+	// con "push" agrego un dato al final de mi erragloe, en este caso "Petra"
+	//nombres.push(" Petra");
+	// borra lo ultimo
+	//nombres.pop();
+	// me agrega un dato al principio
+	//nombres.unshift("Maria");
+	//nombres.shift();
+	// pido que me conserve el dato 1 y el que sigue del 1 y lo demas que me lo elimine 
+	//nombres.splice(1,1);
+	// modifico lo que esta en el medio
+	//nombres.splice(1,1,"Gio");
+	// para escribir juana en lugar de Bienvenidos a mi Web
+	//document.querySelector(".dato").innerHTML=nombres[2];
+	// yo puedo pasar 1 o varias, si paso 1 le tengo que decir el indice o la posicion en el cual se encuentra ese array
+	//document.querySelector(".dato").innerHTML=nombres;
+	//document.querySelector("#dato").innerHTML=nombres;
+	// hay otra manera de crear arrays tambien:
+	// a mi noi me funciono
+	//var info=new Array("lapiz ",100," casa ",500);
+	// arreglo vacio
+	//var arreglo=[];
+	//arreglo[0]=11;
+	//arreglo[1]="Juan";
+	//nombres[2]="Juan";
+	// esto es una matriz, asi creamos un arreglo adentro de otro
+	//var arreglito=[
+	//[dato,dato,dato,dato],
+	//[dato,dato,dato,dato],
+	//[dato,dato,dato,dato]
+	//];
+	// fila 2, dato 3, eso es lo que estoy mencionando ahi
+	//arreglito[2][3];
+	// esto es un objeto, porque todos estos datos son de una sola persona, de "cliente 1", cualquier cosa que vayamos a manipular son considerados como objetos
+	//var cliente1={nombre:"julieta",apellido:"Ruiz",edad:21};
+	// para poder mostrar el dato debo mencionar el atributo 
+	//alert(cliente1.nombre);
+	// tambien podemos crear un arreglo y guardarlo en un objeto
+	//var alumnos=[
+	// posicion o indice 0 esta Pedro
+		//{nombre:"Pedro",edad:21},
+	// posicion o indice 1 esta Ana
+		//{nombre:"Ana",edad:14},
+	// posicion o indice 2 esta Damian
+		//{nombre:"Damian",edad:23},
+		// no tiene sentido hacer esto
+		//{nombre:"Damian",edad:23,apellido:"Flores"}
+	//];
+	// para imprimir eso hago esto
+	//alert(alumnos[1].nombre);
+	//alert(alumnos[2].apellido);
+	// me cambia la posicion 2
+	//document.querySelector(".dato").innerHTML=nombres[2];
+	// cual es la menor edad de mi arreglo
+	//var edad=[16,32,48,15,22,30,18,20];
+	//var min=edad[0];
+	// el i=0 hace mencion a la posicion 0 que seria el 16 en este caso
+	//length me permite contarla cantidad de datos o el tamaño del arreglo
+	/*for(var i=0;i<edad.length;i++){
+		if (edad[i]<min) {
+			min=edad[i];
+		}
+	}*/
+	//console.log(min);
+	// si yo quisiera sacar el promedio de edades
+	//var edad=[16,32,48,15,22,30,18,20];
+	//var suma=0; // CONTADOR
+
+	//for(var i=0;i<edad.length;i++){
+		//suma = suma + edad[i]; 
+	//}
+	//console.log(suma/edad.length);
+	// decir cuantos "15" encontramos en ese arreglo
+	//var edad=[16,32,48,15,22,30,15,18,20,20,15];
+	// el "sort" me lo ordena de menor a mayor y tambien alfabeticamente
+	//edad.sort();
+	//console.log(edad);
+	/*var quince=0;
+	for(var i=0;i<edad.length;i++){
+			if(edad[i]==15){
+				quince++;
+			}
+	}
+	console.log(quince);*/
+
+	// eliminar los numeros repetidos
+	var edad=[16,32,48,15,22,30,15,18,20,20,15];
+	for(var i=0;i<edad.length;i++){
+		if(edad[i]==15){
+			edad.splice(i,1);
+		}
+	}
+	console.log(edad);
+
+	/*
+	function nombre(dato){ // puede que tenga datos o no, no es obligatorio
+		sentencias...
+
+	}
+	*/
+	/*function saludar(){
+		alert("Helooooo CocaCola");
+	}
+	// de esta manera invoco la funcion
+	// lo puedo invocar cuantas veces quiera
+	// y si yo lo invoco varias veces se ejecuta varias veces
+	saludar();
+	saludar();
+	saludar();
+	saludar();
+	saludar();*/
+
+	/*function saludar(nombre){
+		alert("Hola " + nombre);
+	}
+
+	saludar("Austry");*/
+
+	/*function saludar(nombre,apellido){
+		alert("Hola " + nombre + " apellido);
+	}
+	saludar();
+	saludar("Pedro");
+	saludar("Austry "," Castillo");*/
+
+	/*function sumar(a,b){
+		// return es devolver el valor, no quiere decir que va a imprimir nada. Puede retornar cualquier cosa
+		return a+b;
+	}
+	console.log(sumar(5,6));*/
+
+	function actividad(persona1,persona2){
+		// arreglo vacio
+		var actividad=[];
+		// for "anidados"
+		for(var i=0;i<persona1.length;i++){
+			for(var j=0;j<persona2.length;j++){
+				if(persona1[i]==persona2[j]){
+					actividad.push(persona2[j])
+				}
+			}
+		}
+		console.log(actividad);
+	}
+
+	var persona1 = ["leer","comer","pasear","dormir","jugar"];
+	var persona2 = ["comer","soñar","cantar","bailar","jugar"];
+	// si mi funcion tiene 2 parametros no puedo pasar la funcion vacia sin nada
+	//actividad(persona1,persona2);
+	/*var numero = 5;
+	if (numero==5){
+		var numero
+		= 20;
+		console.log(numero);
+	}
+	console.log(numero);*/
+	// let es otro tipo de variable que se va a enfocar mas en un espacio
+	// el var funciona de manera global, pero el iba como retornando el dato que teniamos ahi en cambio con let no lo interpreta porque arriba ya lño estabamos envocando
+	let numero = 5;
+	if (numero==5){
+		console.log(numero);
+		 numero
+		= 20;
+	}
+	console.log(numero);
+
+	</script>
+
+</body>
+</html>

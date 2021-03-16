@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title></title>
+</head>
+<body>
+	<h1> Bienvenidos a mi Web </h1>
+	<button onclick="alert('Hellooooo!!')">Presione aqui</button>
+	<button onclick"saludarA('Ana')">Ana</button> // EN VEZ DE LLAMAR AL "alert" NOSOTROS PODEMOS INVOCAR UNA FUNCION DE JAVASCRIPT Y LE PUEDO PASAR A LA VEZ UN PARAMETRO "Ana" Y LUEDO UN "alert" QUE LO CONTENO CON EL PARAMETRO
+
+	<table id='tabla' border:"1" cellspacing="0" cellpadding="10">
+		
+	</table>
+	<br>
+	<form>
+	<input type="text" id="nombre" placeholder="nombre"><br>
+	<input type="text" id="apellido" placeholder="apellido"><br>
+	<input type="text" id="edad" placeholder="edad"><br>
+	<input type="button" value="Enviar" onclick="insertar()">
+	</form>
+	<br>
+
+	<script>
+		/*var a=1;
+		console.log(a);
+		var a=2;
+		console.log(a);
+		let b=3;
+		console.log(b);
+		let b=4;
+		console.log(b);*/
+		// CUANDO YO TRABAJE CON "let" SOLAMENTE LA TENGO QUE DECLARAR UNA VEZ Y NO HACE FALTA VOLVERLA A CAMBIAR PORQUE SU VALOR ES MODIFICABLE PORQUE ES UNA VARIABLE, LAS VARIABLES VARIAN DE VALOR Y POR ESO SE PUEDEN MODIFICAR SIN PROBLEMA LO QUE SI, A LA HORA DE DECLARARLA 2 VECES NOS VA A TRAER ESE INCOVENIENTE PORQUE LAS VARIABLES DE TIPO "let" ELLAS TRABAJAN CON UN CIERTO ALCANCE   
+		/*var a = 1;
+		//console.log(a);
+		if(true){
+			var a = 2;
+			console.log(a);
+		}
+		console.log(a);*/
+		// EL "let" VA VIENDO EL ALCANCE POR BLOQUE, EL "if" SERIA COMO UN BLOQUE APARTE QUE NO INFLUYE EN EL BLOQUE DE AFUERA POR ESO NO LO ALTERA 
+		/*let a = 3;
+		//console.log(a);
+		if(true){
+			let a = 4;
+			console.log(a);
+		}
+		console.log(a);*/
+		// ENTRE "var" y "let" LA UNICA DIFERENCIA QUE TIENEN ES EL ALCANCE DE CADA UNA DE ELLAS
+		// POR ESTO ES MEJOR A VECES TRABAJAR CON "let"
+
+		// EVENTOS QUE SE PUEDEN TRABAJAR DESDE JAVASCRIPT CON HTML
+
+		// "onfocus" ES EL MAS UTILIZADO
+		// input type="text" onfocus"alert('haz presionado una tecla dentro de la caja')";
+
+		//A LOS EVENTOS TAMBIEN SE LOS PUEDE LLAMAR DIRECTAMENTE DESDE EL CODIGO
+		/*document.querySelector('button').onclick=alert;
+		function alert(){
+			alert('eventos desde el codigo');
+		}*/
+
+		/*function saludarA(nombre){
+
+			alert('Hola ' + nombre);
+		}*/
+
+		// LO INTERESANTE, ES QUE PODEMOS REUTILIZAR ESA MISMA FUNCION PARA DIFERENTES BOTONES Y PASARLE A LA MISMA DISTINTOS DATOS SEGUN LO NECESITEMOS.
+		//Ej: <button onclick "saludarA('Ana')">Ana</button>
+		//<button onclick "saludarA('Pedro')">Pedro</button>
+		//<button onclick "saludarA('Juan')">Juan</button>
+		//<button onclick "saludarA('Maria')">Maria</button>
+
+		var clientes = [
+			{nombre:'Damian',apellido:'Villagra',edad:25},
+			{nombre:'Ricardo',apellido:'Gonzales',edad:25},
+			{nombre:'Yamila',apellido:'Zof',edad:25}
+		];
+		// siempre tengo que llamar a la funcion, sino no hace nada
+		// HACER UNA TABLA A PARTIR DE UN ARREGLO DESDE JAVASCRIPT
+		mostrar();
+
+		function insertar(){
+			var nombre=document.getElementById('nombre').value;
+			var apellido=document.getElementById('apellido').value;
+			var edad=document.getElementById('edad').value;
+			clientes.push({nombre:nombre,apellido:apellido,edad:edad});
+			mostrar();
+		}
+		// tiene que ir un verbo, en este caso "mostrar"
+		function mostrar(){
+			var datos='<tr><th>nombre</th><th>apellido</th><th>edad</th></tr>';
+			// necesito 3 filas, 1 para cada dato
+			// td es la fila 
+			// tr es la columna
+			for(var i=0;i<clientes.length;i++){
+			var datos=datos + '<tr><td>'+clientes[i].nombre+'</td><td>'+clientes[i].apellido+'</td><td>'+clientes[i].edad+'</td></tr>';
+			}
+
+			document.getElementById('tabla').innerHTML=datos;
+			// HACER UN FORMULARIOEN HTML PARA INGRESAR DATOS PARA GUARDARLOS DENTRO DE ESA MISMA TABLA 
+		}
+
+	</script>
+ 
+</body>
+</html>

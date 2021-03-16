@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title></title>
+</head>
+<body>
+<div style="width: 50%;height: 200px; margin-left: 25%;border: 1px solid blue;text-align: center;font-weight: bold;line-height: 200px;" id="semaforo">SEMAFORO</div>
+<p style = "text-align: center;">
+	<button onclick="cambiarColor('green')">Cambiar a verde</button><br><br>
+	<button onclick="cambiarColor('yellow')">Cambiar a amarillo</button><br><br>
+	<button onclick="cambiarColor('red')">Cambiar a rojo</button><br>
+</p>
+<script>
+	function cambiarColor(color){
+	document.getElementById('semaforo').style.backgroundColor=color;
+	document.getElementById('semaforo').innerHTML=color;
+	document.getElementById('semaforo').style.color='white';
+	document.getElementById('semaforo').style.textTransform='uppercase';
+	}
+	// Realizar un programa que simule, mediante una funcion denominada cuenta; como el ordenador cuenta por pantalla, desde 0 hasta un numero a determinar por el usuario. Dicho numero se pide en la funcion principal y se envia a la funcion cuenta por valor, donde se iran imprimiendo.
+	
+</script>
+</body>
+</html>

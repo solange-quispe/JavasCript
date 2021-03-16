@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<title></title>
+	<script>
+	// JQUERY es JAVASCRIPT: es una biblioteca de JavasCrip.	
+	// para nosotros poder trabajar con Jquery necesitamos vincularlo hacia nuestro sitio al que estamos desarrollando. Y lo podemos vincular de 2 maneras:
+	// Podemos llamarla como un archivo externo	con scrip src y llamamos a esa libreria que eso seria usar un CDN para tenerlo desde el servidor directamente de Jquery
+	// Cuando vamos a trabajar con un CDN tiene que ser uno serio ej. hoover 
+	// Nosotros tenemos que trabajar con CDN para nuestro servidor no se ralintelice jamas
+	// Jquery.com, biblioteca, libreria es lo mismo 
+	// para conseguir el link de Jquery debo poner en el buscador "jquery" 
+	// ingreso en el primer "Descargue jQuery 3.5.1 de producción comprimido"
+	//y copio la direccion de arriba "https://code.jquery.com/jquery-3.5.1.min.js"
+	// y finalmente lo pego adentro del comando <script src=" "></script> y listo!!
+	</script>
+</head>
+<body>
+	<h1 id = "Saludo"> Hello!</h1>
+	<script>
+		// son diferentes maneras de escribir lo mismo
+		// 1-
+		// var texto = document.getElementsByTagName('Saludo');
+		//texto.innerHTML = 'Saludo';*/
+		//document.getElementsByTagName('Saludo').innerHTML = 'Saludo';
+	// 2-
+	//var texto = $("#Saludo").html();
+	//alert(texto.innerHTML);
+	// me pisa el "Hello!"
+	//var texto = $("#Saludo").html("Bye");
+	//var texto = $("#Saludo").text("Bye");
+	//alert(texto);
+	/* 
+	$("SELECTOR").OPERACION();
+	VENTOS: en Jquery!
+	text
+	html
+	click
+	mouseover
+	dbclick
+	focus
+	focusout
+	show: para mostrar algo
+	hide: para no mostrarlo
+	hay como 100.00
+	*/
+	</script>
+	<div style="widch: 200 px; height: 100 px; background-color: tomato;"></div>
+	<button id="aparece">Aparece</button>
+	<button id="desaparece">No te quiero ver</button>	
+<script>
+	$("#aparece").click(aparecer);
+	$("#desaparece").click(desaparecer);
+	function aparecer(){
+		//$("div").show();
+		//$("div").fadeIn(3000);
+		//$("div").fadeIn("slow");
+		$("div").slideDown("slow");
+	}
+	function desaparecer(){
+		//$("div").hide();
+		//$("div").fadeOut(3000);
+		//$("div").fadeOut("slow");
+		$("div").slideUp("slow");
+	}
+</script>
+	
+
+</body>
+</html>
+

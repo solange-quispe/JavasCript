@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Ejercicio 1</title>
+</head>
+<body>
+	<script>
+	/* Realizar un programa que simule, mediante una funcion denominada cuenta; como el ordenador cuenta por pantalla, desde 0 hasta un numero a determinar por el usuario. Dicho numero se pide en la funcion principal y se envia a la funcion cuenta por valor, donde se iran imprimiendo.*/
+	/*var mensaje = parseInt(prompt("Escribe el limite"));
+	function principal(mensaje){ // nombre de la funcion
+		for (var i=0;i<=mensaje;i++){
+			document.write(i+"<br>");
+		}
+	}
+	principal(mensaje);*/	// llamar a la funcion
+	/* Realizar un programa que, pidiendo la introduccion de un numero, averigue mediante una funcion, si dicho numero que se le pase es positivo, negativo o nulo. Para ello, debera escribir en pantalla, en caso positivo, el mensaje "El numero es positivo". En el caso de ser negativo escribira "El numero es negativo". Si resulta ser nulo escribira "El numero es nulo".*/
+	/*var numero = parseInt(prompt("Ingrese un numero"));
+	function primarykey(numero){ // este es el nombre de la funcion
+		if (numero < 0){
+			document.write("Negativo");
+		}else if(numero > 0){
+			document.write("Positivo");
+		}else{
+			document.write("Nulo");
+		}
+	}
+	primarykey(numero);*/	// llamar a la funcion
+	// Escribir un procedimiento llamado "cierreDelDia" el cual invoca dos veces a la funcion "iva" (tambien creada por nosotros), para calcular el iva del 10.5% 6 el 21% para el monto
+
+	var precio = parseFloat(prompt("Ingrese el monto total"));
+
+	function calcularIva(precio,iva){ // este es el nombre de la funcion
+			iva = precio * iva;
+			document.write(iva+"<br>");
+		}
+
+	calcularIva(precio,0.21);
+	calcularIva(precio,0.10);
+	</script>
+
+</body>
+
+</html>

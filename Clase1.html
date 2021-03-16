@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Document</title>
+	<!-- asi seria en linea -->
+	<!-- <script src="Clase1.js"> --> <!-- asi lo viculo como en el CSS -->
+	<!-- en javascrip uso scrip ya no style -->
+	<!-- el script puede ir dentro del head o dentro del body, dependiendo de lo que tengamos que hacer -->
+	<!-- <script> 
+		alert("Hola mundo");
+		document.write("Hola guapa!");
+		console.log("Hola estoy probando cositas ;)");
+
+	</script> -->
+</head>
+<!-- asi es en linea	 --> 
+<!-- <body onload="alert('Hola soy JS')"> -->
+<body>
+	<script>
+		// podemos crear cuantos SCRIPT necesitemos
+		// el SCRIPT puede estar en el HEAD o dentro del BODY no hay incoveniente con eso
+		//var nombre = "Solange";
+		//nombre = "Fabiola";
+		//alert(nombre);
+		// puedo sumar directamente aqui si quiero
+		//var edad = 20 + 8;
+		
+		// me da 7 porque incrementa en 1
+		
+		// podemos agrandar y achicar la letra con HTML
+		//document.write("<h1> Mi nombre es: </h>" + nombre + "<em> escribiendo </em>");
+		// puedo hacer la cuenta aca tambien!
+		//document.write(20 + 8);
+
+		// var a=5;
+		// var b=6;
+
+		//b++;
+		//edad=a+b;
+		//document.write(b);
+		// me da 8
+		//b++; // b = b + 1;
+		// cuando aplicamos modulo me hace la division pero me devuelve el resto, no el resultado.
+		//b=b%2;
+		//a+=b; // a = a + b;
+		// esto es una variable de tipo booleano
+		//var bo=true;
+		//document.write(bo);
+		// aca lo estaria negando
+		//document.write(!bo);
+		//var to=false;
+
+		//document.write(bo && to);
+		//document.write(bo || to);
+		//document.write(b);
+		//document.write(a);
+		// no poner HTML dentro del alert, porque me imprime todo!
+		//alert("<h1> Hola </h1>");
+
+		/* && = and y
+		TRUE && TRUE = TRUE
+		TRUE && FALSE = FALSE
+		FALSE && TRUE = FALSE
+		FALSE && FALSE = FALSE
+		|| = or 0
+		TRUE || TRUE = TRUE
+		TRUE || FALSE = TRUE
+		FALSE || TRUE = TRUE
+		FALSE || FALSE = FALSE
+		*/
+		//var bo=true;
+		//var to=false;
+		//a=5;
+		//b=20;
+
+		//document.write(a > b);
+		//document.write(a < b);
+		// siempre el signo de igual va ultimo
+		// < > <= >= == !=
+		// con prompt o windows prompt me aparece una ventenita para que el usuario escriba algo
+		//prompt("Escribe tu nombre");
+		//nombre = prompt("Escribe tu nombre");
+
+		//document.write("Escribiste: " + nombre);
+
+		// EJERCICIOS:
+		// Solicitar 3 numeros y devolver el promedio
+
+		// var numero1;
+		// var numero2;
+		// var numero3;
+		// var promedio;
+
+		// numero1 = prompt("Ingrese numero 1");
+		// numero2 = prompt("Ingrese numero 2");
+		// numero3 = prompt("Ingrese numero 3");
+		// numero1 = parseInt(numero1);
+		// numero2 = parseInt(numero2);
+		// numero3 = parseInt(numero3);
+
+		// promedio = (numero1 + numero2 + numero3) / 3;
+
+		// document.write("El promedio es: " + promedio);
+
+		// var numeroA;
+		// var numeroB;
+		// var promedio;
+
+		// numeroA = prompt("Ingrese un numero");
+		// numeroB = prompt("Ingrese otro numero");
+
+		// numeroA = parseInt(numeroA);
+		// numeroB = parseInt(numeroB);
+
+		// promedio = (numeroA + numeroB) / 2;
+
+		// document.write("El promedio es: " + promedio);
+
+		// TAREA!...
+		// var edad;
+		// edad = prompt("Ingrese su edad");
+
+		// edad = parseInt(edad);
+
+		// if(edad < 18){
+		// 	edad = prompt("Usted no puede ingresar por ser menor de edad!");
+		// }else if(edad >= 18 && edad < 26){
+		// 	edad = prompt("Bienvenido, usted puede pasar...");
+		// }else {
+		// 	edad = prompt("Usted no puede ingresar por ser muy mayor!");
+		// }
+
+		// Solicitar un numero con parseInt y decir si ese numero tiene una, dos, tres o cuatro cifras. Inclusive si colocaron otro numero que de ERROR.
+
+		// var numero;
+		// numero = parseInt(numero);
+
+		// numero = prompt("Ingrese un numero");
+
+		// if (numero > 0 && numero < 10) {
+		// 	numero = prompt("Este numero tienen una cifra");
+		// }else if (numero >= 10 && numero < 100) {
+		// 	numero = prompt("Este numero tiene 2 cifras");
+		// }else if (numero >= 100 && numero < 1000) {
+		// 	numero = prompt("Este numero tiene 3 cifras");
+		// }else if (numero >= 1000 && numero < 10000) {
+		// 	numero = prompt("Este numero tiene 4 cifras");
+		// }else{
+		// 	numero = prompt("ERROR! El numero invalido");
+		// }
+		// Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera:
+		// Si trabaja 40 horas o menos se le paga $216 por hora
+		// Si trabaja mas de 40 horas se le paga $20 por cada hora extra.
+
+		// var sueldo;
+		// var sueldoExtra;
+		// var horas;
+
+		// horas = parseInt(horas);
+
+		// horas = prompt("Ingrese cantidad de horas trabajadas");
+
+		// if (horas > 0 && horas < 41) {
+		// 	sueldo = horas * 16;
+	
+		// }else {
+		// 	sueldo = 40 * 16;
+		// 	sueldoExtra = (horas - 40) * 20;
+		// 	sueldo = sueldo + sueldoExtra;
+		// }
+		
+		// document.write("Tu sueldo es: " + sueldo);
+
+		// switch(variable){
+		// 	case N1:
+		// 	sentencias...
+		// 	break;
+		// 	case N2:
+		// 	sentencias...
+		// 	break;
+		// 	case N3:
+		// 	sentencias...
+		// 	break;
+		// default:
+		// sentencias...
+		// break;
+		// }	
+		
+		// var dia;
+
+		// dia = prompt("Ingrese dia");
+
+		// switch(dia){
+		// 	case "lunes":
+		// 	document.write("Hoy es Lunes");
+		// 	break;
+		// 	case "martes":
+		// 	document.write("Hoy es Martes");
+		// 	break;
+		// 	case "miercoles":
+		// 	document.write("Hoy es Miercoles");
+		// 	break;
+		// 	case "jueves":
+		// 	document.write("Hoy es Jueves");
+		// 	break;
+		// 	case "viernes":
+		// 	document.write("Hoy es Viernes");
+		// 	break;
+		// 	default:
+		// 	document.write("Fin de semana!!...");
+		// 	break;
+		// }
+			// alt + mayus + f es para identar en visual studio
+
+			// var numero1;
+			// var numero2;
+			// var operacion; 
+			// var resultado;
+
+			// numero1 = parseFloat(numero1);
+			// numero2 = parseFloat(numero2);
+
+			// numero1 = prompt("Ingrese un numero");
+			// numero2 = prompt("Ingrese otro numero");
+			// operacion = prompt("Elija el tipo de operacion: + - * / ");
+
+			// switch(operacion){
+			// 	case "+":
+			// 	resultado = numero1 + numero2;
+			// 	break;
+			// 	case "-":
+			// 	resultado = numero1 - numero2;
+			// 	break;
+			// 	case "*":
+			// 	resultado = numero1 * numero2;
+			// 	break;
+			// 	break;
+			// 	case "/":
+			// 	resultado = numero1 / numero2;
+			// 	break;
+			// 	break;
+			// 	default:
+			// 	document.write("ERROR! Esa operacion no existe");
+			// 	break;
+
+			// }
+			// document.write("El resultado es: " + resultado);
+
+			// var i = 0;
+
+			// while(i < 10){
+			// 	//document.write("Hola!" + "<br>");
+			// 	document.write(i + "<br>");
+			// 	i++; // necesito un contador si o si
+			// }
+
+			// var i = 100;
+
+			// while(i >= 2){
+			// 	document.write(i + "<br>");
+			// 	i = i-2; // necesito un contador si o si
+			// }
+
+			// var i = 100;
+
+			// while(i >= 2){
+			// 	if (i != 82 && i != 60) {
+			// 	document.write(i + "<br>");
+			// 	}
+			// 	i = i-2; 
+			// }
+
+			// var i = 0;
+	
+			// while(i < 5){
+			// 	if (i % 2 && i != 0){
+			// 		document.write("@ @" + "<br>");
+			// 	}
+			// 	else {
+			// 		document.write("@" + "<br>");
+			// 	}
+			// 	i++;
+			// }
+
+			// var arroba = "@";
+			// var i = 0;
+	
+			// while(i < 5){
+			// 		// primero lo imprimimos
+			// 		document.write(arroba + "<br>");
+			// 		// luego lo concatenamos
+			// 		arroba = arroba + "@";
+			// 		i++;
+			// }
+
+			// var x = 0;
+
+			// do {
+			// 	document.write(x);
+
+			// 	x++;
+
+			// } while(x < 10);
+			// el cajero tiene que pedir la clave y tenemos que corroborar que esa clave sea correcta. Si la clave es correcta tenemos que hacer algo, si la clave es incorrecta que nos diga que nos equivocamos pero si la clave es correcta nosotros tenemos que mostrarle un menu de opciones, es decir un prompt.
+			// Un menu que nos diga por ej marca 1 para consulta de saldo, marca 2 para depositos, 3 para retiro, 4 para transferencia. y a traves de un if o un switch dependiendo del numero que escriba me tiene que devolver el saldo. Para eso primero tengo que crear una variable que tenga un saldo ficticio ahi y que en teoria esto deberia venir de una base de datos que esta guardada ahi. Entonces esto me tienen que devolver un saldo y si marca deposito lo que tenemos que hacer es solicitarle que diga cuanto va a depositar para poder agregar ese deposito al saldo y que diga el deposito se hizo tu deposito es tanto y si vamos a hacer un retiro, obviamente seria una resta y corroborar dentro del retiro si tiene saldo o no de manera que no invente y que no intente retirar mas dinero de lo que tiene, sino que si no tiene dinero le diga que no tiene fondos, en la tansferencia lo mismo, que tenga un numero de cuenta ficticio para mostrar "hicimos la transferencia del numero tal, por un monto de tal y tu nuevo saldo es tal". Tambien podemos agregar un default en caso de que no escriba ningunan de las 4 opciones del menu y podemos seguir agregando cosas. Chances para poner la clave. Sumarle una opcion para volver al menu principal 
+
+			var i = 0;
+			var opcion;
+			var saldo = 300;
+			var monto;
+
+			while(i < 3){
+				const clave = parseInt(prompt("Ingrese su clave"));
+
+			if (clave == 1234) {
+				opcion = parseInt(prompt("Ingrese el numero de opcion: " + " 1- Saldo " + " 2- Deposito " + " 3- Retiro " + " 4- Transferencia " + " 5- Salir "));
+				switch(opcion){
+					case 1:
+					document.write("Su saldo es: " + saldo);
+					break;
+					case 2:
+					monto = parseInt(prompt("Monto a depositar"));
+					saldo = saldo + monto;
+					document.write("Deposito realizado correctamente, su saldo es: " + saldo);
+					break;
+				}
+				break;
+
+
+			}else{
+				alert("ERROR!! Clave incorrecta");
+				i++;
+			}
+		}
+
+
+	</script>	
+	
+	// JQUERY es JAVASCRIPT: es una biblioteca de JavasCrip.	
+	// para nosotros poder trabajar con Jquery necesitamos vincularlo hacia nuestro sitio al que estamos desarrollando. Y lo podemos vincular de 2 maneras:
+	// Podemos llamarla como un archivo externo	con scrip src y llamamos a esa libreria que eso seria usar un CDN para tenerlo desde el servidor directamente de Jquery
+	// Cuando vamos a trabajar con un CDN tiene que ser uno serio ej. hoover 
+	// Nosotros tenemos que trabajar con CDN para nuestro servidor no se ralintelice jamas
+	// Jquery.com, biblioteca, libreria es lo mismo 
+	
+</body>
+</html>
